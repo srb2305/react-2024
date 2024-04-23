@@ -1,0 +1,25 @@
+html{
+	background: lightgray;
+}
+.heading{
+	text-align: center;
+	color:  #343030;
+}
+.primaryButton{
+	background: #705ecf;
+	padding: 10px;
+	text-align: center;
+	width: 200px;
+	color:  white;
+	border: none;
+}
+.nav {
+	text-align: right;
+	background: white;
+    padding: 12px;
+}
+.nav a{
+	margin: 10px;
+    text-decoration: none;
+    font-size: x-large;
+}
