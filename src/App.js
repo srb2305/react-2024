@@ -8,6 +8,9 @@ import Events from './components/Events';
 import Navigation from './common/Navigation';
 import StateHook from './components/StateHook';
 import Array from './components/Array';
+import Form from './components/Form';
+import FormCommonFunction from './components/FormCommonFunction';
+import FormUseRef from './components/FormUseRef';
 
 function App() {
   return ( 
@@ -25,6 +28,9 @@ function App() {
           <Route path="/events" element={ <Events /> }  />
           <Route path="/stateHook" element={ <StateHook /> }  />
           <Route path="/Array" element={ <Array /> }  />
+          <Route path="/form" element={ <Form /> }  />
+          <Route path="/form2" element={ <FormCommonFunction /> }  />
+          <Route path="/FormUseRef" element={ <FormUseRef /> }  />
         </Routes>
       </BrowserRouter>
     </>

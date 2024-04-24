@@ -11,6 +11,9 @@ function Navigation(){
 			<Link to={{ pathname: "/events" }}>Events</Link>
 			<Link to={{ pathname: "/stateHook" }}>StateHook</Link>
 			<Link to={{ pathname: "/Array" }}>Array</Link>
+			<Link to={{ pathname: "/form" }}>Form</Link>
+			<Link to={{ pathname: "/form2" }}>Form2</Link>
+			<Link to={{ pathname: "/FormUseRef" }}>Form Ref</Link>
 		</div>
 	)
 }
