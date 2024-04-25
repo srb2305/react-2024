@@ -14,6 +14,10 @@ function Navigation(){
 			<Link to={{ pathname: "/form" }}>Form</Link>
 			<Link to={{ pathname: "/form2" }}>Form2</Link>
 			<Link to={{ pathname: "/FormUseRef" }}>Form Ref</Link>
+			<Link to={{ pathname: "/ConditionalRendering" }}>ConditionalRendering</Link>
+			<Link to={{ pathname: "/ConditionalRendering" }}>ConditionalRendering</Link>
+			<Link to={{ pathname: "/LifeCycle" }}>LifeCycle</Link>
+			<Link to={{ pathname: "/LifeCycleClassComponent" }}>LifeCycleClassComponent</Link>
 		</div>
 	)
 }

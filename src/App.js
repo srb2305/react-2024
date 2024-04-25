@@ -11,6 +11,9 @@ import Array from './components/Array';
 import Form from './components/Form';
 import FormCommonFunction from './components/FormCommonFunction';
 import FormUseRef from './components/FormUseRef';
+import ConditionalRendering from './components/ConditionalRendering';
+import LifeCycle from './components/LifeCycle';
+import LifeCycleClassComponent from './components/LifeCycleClassComponent';
 
 function App() {
   return ( 
@@ -31,6 +34,9 @@ function App() {
           <Route path="/form" element={ <Form /> }  />
           <Route path="/form2" element={ <FormCommonFunction /> }  />
           <Route path="/FormUseRef" element={ <FormUseRef /> }  />
+          <Route path="/ConditionalRendering" element={ <ConditionalRendering /> }  />
+          <Route path="/LifeCycle" element={ <LifeCycle /> }  />
+          <Route path="/LifeCycleClassComponent" element={ <LifeCycleClassComponent /> }  />
         </Routes>
       </BrowserRouter>
     </>
@@ -38,3 +44,4 @@ function App() {
 }
 
 export default App;
+
