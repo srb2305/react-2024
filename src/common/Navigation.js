@@ -18,6 +18,8 @@ function Navigation(){
 			<Link to={{ pathname: "/ConditionalRendering" }}>ConditionalRendering</Link>
 			<Link to={{ pathname: "/LifeCycle" }}>LifeCycle</Link>
 			<Link to={{ pathname: "/LifeCycleClassComponent" }}>LifeCycleClassComponent</Link>
+			<Link to={{ pathname: "/ParentComponent" }}>Data Transfer</Link>
+			<Link to={{ pathname: "/product-details/123" }}>Product Details</Link>
 		</div>
 	)
 }

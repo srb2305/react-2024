@@ -22,8 +22,6 @@ function LifeCycle(prop){
 		}
 	},[]); // clear state
 
-
-
 	return (
 		<>
 			<h1> Life Cycle</h1>

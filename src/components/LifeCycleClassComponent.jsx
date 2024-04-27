@@ -22,7 +22,7 @@ class LifeCycleClassComponent extends Component {
 	}
 
 	componentWillUnmount(){
-		console.log('compoentnt will unmoint');
+		console.log('compoentnt will unmount');
 	}
 
 	render(){

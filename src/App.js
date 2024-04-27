@@ -14,6 +14,8 @@ import FormUseRef from './components/FormUseRef';
 import ConditionalRendering from './components/ConditionalRendering';
 import LifeCycle from './components/LifeCycle';
 import LifeCycleClassComponent from './components/LifeCycleClassComponent';
+import ParentComponent from './components/ParentComponent';
+import ProductDetails from './components/ProductDetails';
 
 function App() {
   return ( 
@@ -23,7 +25,7 @@ function App() {
         <Navigation />  
       
         <Routes>
-          <Route path="/"      element={ <Home /> }  />
+          <Route exact path="/"      element={ <Home /> }  />
           <Route path="/about" element={ <About /> }  />
           <Route path="/contact" element={ <Contact /> }  />
           <Route path="/list" element={ <List /> }  />
@@ -37,6 +39,8 @@ function App() {
           <Route path="/ConditionalRendering" element={ <ConditionalRendering /> }  />
           <Route path="/LifeCycle" element={ <LifeCycle /> }  />
           <Route path="/LifeCycleClassComponent" element={ <LifeCycleClassComponent /> }  />
+          <Route path="/ParentComponent" element={ <ParentComponent /> }  />
+          <Route path="/product-details/:id" element={ <ProductDetails /> }  />
         </Routes>
       </BrowserRouter>
     </>
