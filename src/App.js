@@ -16,6 +16,8 @@ import LifeCycle from './components/LifeCycle';
 import LifeCycleClassComponent from './components/LifeCycleClassComponent';
 import ParentComponent from './components/ParentComponent';
 import ProductDetails from './components/ProductDetails';
+import GetData from './components/crud/GetData';
+import AddData from './components/crud/AddData';
 
 function App() {
   return ( 
@@ -41,6 +43,8 @@ function App() {
           <Route path="/LifeCycleClassComponent" element={ <LifeCycleClassComponent /> }  />
           <Route path="/ParentComponent" element={ <ParentComponent /> }  />
           <Route path="/product-details/:id" element={ <ProductDetails /> }  />
+          <Route path="/GetData" element={ <GetData /> }  />
+          <Route path="/AddData" element={ <AddData /> }  />
         </Routes>
       </BrowserRouter>
     </>

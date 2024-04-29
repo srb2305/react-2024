@@ -20,6 +20,8 @@ function Navigation(){
 			<Link to={{ pathname: "/LifeCycleClassComponent" }}>LifeCycleClassComponent</Link>
 			<Link to={{ pathname: "/ParentComponent" }}>Data Transfer</Link>
 			<Link to={{ pathname: "/product-details/123" }}>Product Details</Link>
+			<Link to={{ pathname: "/GetData" }}>GetData</Link>
+			<Link to={{ pathname: "/AddData" }}>AddData</Link>
 		</div>
 	)
 }
