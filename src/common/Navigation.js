@@ -2,27 +2,27 @@ import { Link }  from 'react-router-dom';
 
 function Navigation(){
 	return(
-		<div className="nav">
-			<Link to={{ pathname: "/" }}>Home</Link>
-			<Link to={{ pathname: "/about" }}>About</Link>
-			<Link to={{ pathname: "/contact" }}>Contact</Link>
-			<Link to={{ pathname: "/list" }}>List</Link>
-			<Link to={{ pathname: "/list2" }}>List2</Link>
-			<Link to={{ pathname: "/events" }}>Events</Link>
-			<Link to={{ pathname: "/stateHook" }}>StateHook</Link>
-			<Link to={{ pathname: "/Array" }}>Array</Link>
-			<Link to={{ pathname: "/form" }}>Form</Link>
-			<Link to={{ pathname: "/form2" }}>Form2</Link>
-			<Link to={{ pathname: "/FormUseRef" }}>Form Ref</Link>
-			<Link to={{ pathname: "/ConditionalRendering" }}>ConditionalRendering</Link>
-			<Link to={{ pathname: "/ConditionalRendering" }}>ConditionalRendering</Link>
-			<Link to={{ pathname: "/LifeCycle" }}>LifeCycle</Link>
-			<Link to={{ pathname: "/LifeCycleClassComponent" }}>LifeCycleClassComponent</Link>
-			<Link to={{ pathname: "/ParentComponent" }}>Data Transfer</Link>
-			<Link to={{ pathname: "/product-details/123" }}>Product Details</Link>
-			<Link to={{ pathname: "/GetData" }}>GetData</Link>
-			<Link to={{ pathname: "/AddData" }}>AddData</Link>
-		</div>
+		<ul className="nav">
+			<li><Link to={{ pathname: "/" }}>Home</Link></li>
+			<li><Link to={{ pathname: "/about" }}>About</Link></li>
+			<li><Link to={{ pathname: "/contact" }}>Contact</Link></li>
+			<li><Link to={{ pathname: "/list" }}>List</Link></li>
+			<li><Link to={{ pathname: "/list2" }}>List2</Link></li>
+			<li><Link to={{ pathname: "/events" }}>Events</Link></li>
+			<li><Link to={{ pathname: "/stateHook" }}>StateHook</Link></li>
+			<li><Link to={{ pathname: "/Array" }}>Array</Link></li>
+			<li><Link to={{ pathname: "/form" }}>Form</Link></li>
+			<li><Link to={{ pathname: "/form2" }}>Form2</Link></li>
+			<li><Link to={{ pathname: "/FormUseRef" }}>Form Ref</Link></li>
+			<li><Link to={{ pathname: "/ConditionalRendering" }}>ConditionalRendering</Link></li>
+			<li><Link to={{ pathname: "/ConditionalRendering" }}>ConditionalRendering</Link></li>
+			<li><Link to={{ pathname: "/LifeCycle" }}>LifeCycle</Link></li>
+			<li><Link to={{ pathname: "/LifeCycleClassComponent" }}>LifeCycleClassComponent</Link></li>
+			<li><Link to={{ pathname: "/ParentComponent" }}>Data Transfer</Link></li>
+			<li><Link to={{ pathname: "/product-details/123" }}>Product Details</Link></li>
+			<li><Link to={{ pathname: "/GetData" }}>GetData</Link></li>
+			<li><Link to={{ pathname: "/AddData" }}>AddData</Link></li>
+		</ul>
 	)
 }
 

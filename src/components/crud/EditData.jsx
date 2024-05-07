@@ -53,15 +53,15 @@ function EditData(){
 	return(
 		<>
 			<h1> Edit Data</h1>
-		<form onSubmit={formSubmit} >
-			<p> Title : <input type="text" name="title" value={title} onChange={handleChange} /> </p>
-			<p> Body : 
-				<textarea name="body" rows="6" onChange={handleChange} value={body}>
-					{body}	
-				</textarea>
-			</p>
-			<button type="submit">Update</button>
-		</form>
+			<form onSubmit={formSubmit} >
+				<p> Title : <input type="text" name="title" value={title} onChange={handleChange} /> </p>
+				<p> Body : 
+					<textarea name="body" rows="6" onChange={handleChange} value={body}>
+						{body}	
+					</textarea>
+				</p>
+				<button type="submit">Update</button>
+			</form>
 		</>
 	);
 }

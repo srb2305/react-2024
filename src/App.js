@@ -25,31 +25,35 @@ function App() {
   return ( 
     <>
       <BrowserRouter>
-
-        <Navigation />  
-      
-        <Routes>
-          <Route exact path="/"      element={ <Home /> }  />
-          <Route path="/about" element={ <About /> }  />
-          <Route path="/contact" element={ <Contact /> }  />
-          <Route path="/list" element={ <List /> }  />
-          <Route path="/list2" element={ <List2 /> }  />
-          <Route path="/events" element={ <Events /> }  />
-          <Route path="/stateHook" element={ <StateHook /> }  />
-          <Route path="/Array" element={ <Array /> }  />
-          <Route path="/form" element={ <Form /> }  />
-          <Route path="/form2" element={ <FormCommonFunction /> }  />
-          <Route path="/FormUseRef" element={ <FormUseRef /> }  />
-          <Route path="/ConditionalRendering" element={ <ConditionalRendering /> }  />
-          <Route path="/LifeCycle" element={ <LifeCycle /> }  />
-          <Route path="/LifeCycleClassComponent" element={ <LifeCycleClassComponent /> }  />
-          <Route path="/ParentComponent" element={ <ParentComponent /> }  />
-          <Route path="/product-details/:id" element={ <ProductDetails /> }  />
-          <Route path="/GetData" element={ <GetData /> }  />
-          <Route path="/GetDataById/:id" element={ <GetDataById /> }  />
-          <Route path="/AddData" element={ <AddData /> }  />
-          <Route path="/EditData/:id" element={ <EditData /> }  />
-        </Routes>
+        <div className="mainDiv">
+          <div className="contentDiv">
+            <Routes>
+              <Route exact path="/"      element={ <Home /> }  />
+              <Route path="/about" element={ <About /> }  />
+              <Route path="/contact" element={ <Contact /> }  />
+              <Route path="/list" element={ <List /> }  />
+              <Route path="/list2" element={ <List2 /> }  />
+              <Route path="/events" element={ <Events /> }  />
+              <Route path="/stateHook" element={ <StateHook /> }  />
+              <Route path="/Array" element={ <Array /> }  />
+              <Route path="/form" element={ <Form /> }  />
+              <Route path="/form2" element={ <FormCommonFunction /> }  />
+              <Route path="/FormUseRef" element={ <FormUseRef /> }  />
+              <Route path="/ConditionalRendering" element={ <ConditionalRendering /> }  />
+              <Route path="/LifeCycle" element={ <LifeCycle /> }  />
+              <Route path="/LifeCycleClassComponent" element={ <LifeCycleClassComponent /> }  />
+              <Route path="/ParentComponent" element={ <ParentComponent /> }  />
+              <Route path="/product-details/:id" element={ <ProductDetails /> }  />
+              <Route path="/GetData" element={ <GetData /> }  />
+              <Route path="/GetDataById/:id" element={ <GetDataById /> }  />
+              <Route path="/AddData" element={ <AddData /> }  />
+              <Route path="/EditData/:id" element={ <EditData /> }  />
+            </Routes>
+          </div>
+          <div className="navigationDiv">
+            <Navigation />
+          </div>
+        </div>
       </BrowserRouter>
     </>
     )
