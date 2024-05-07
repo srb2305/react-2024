@@ -1,27 +1,28 @@
 import React, { useState, useEffect } from 'react';
+import { Link }  from 'react-router-dom';
 
 function GetData(){
 	const [data, setData] = useState([]);
 
 	useEffect(() => {
-		console.log('useEffect');
-		const fetchData = async () => {
-			try {
-				//const responce = await fetch('https://jsonplaceholder.typicode.com/posts');
-				const responce = await fetch('https://cors-anywhere.herokuapp.com/https://srbtracking.com/api/feedback_get');
-				if (!responce.status) {
-					console.log('Something went wrong');
-					throw new Error('Responce was not ok');
-				}
-				const jsonData = await responce.json();
-				setData(jsonData);
-			} catch (error) {
-				console.log('Error in fetching data', error);
-			}
-		};
-
 		fetchData();
 	}, []);
+
+	const fetchData = async () => {
+		try {
+			const responce = await fetch('https://jsonplaceholder.typicode.com/posts');
+			//const responce = await fetch('https://cors-anywhere.herokuapp.com/https://srbtracking.com/api/feedback_get');
+			if (!responce.status) {
+				console.log('Something went wrong');
+				throw new Error('Responce was not ok');
+			}
+			const jsonData = await responce.json();
+			setData(jsonData);
+		} catch (error) {
+			console.log('Error in fetching data', error);
+		}
+	};
+
 	return(
 		<>
 			<h1>Data List</h1>
@@ -30,14 +31,20 @@ function GetData(){
 				<tr>
 					<td>S/No</td>
 					<td>Title</td>
-					<td>Body</td>
+					<td>View</td>
+					<td>Edit</td>
 				</tr>
 				{
 					data.map( key => 
 						<tr key={key.id}>
 							<td>{key.id}</td>
 							<td>{key.title}</td>
-							<td>{key.description}</td>
+							<td> 
+								<Link to={`/GetDataById/${key.id}`}> View </Link>
+							</td>
+							<td>
+								<Link to={`/EditData/${key.id}`}> Edit </Link>
+							</td>
 						</tr>
 					)
 				}	
