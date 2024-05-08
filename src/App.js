@@ -20,6 +20,8 @@ import GetData from './components/crud/GetData';
 import GetDataById from './components/crud/GetDataById';
 import AddData from './components/crud/AddData';
 import EditData from './components/crud/EditData';
+import MaterialForm from './components/design/Form';
+import Signin from './components/design/Signin';
 
 function App() {
   return ( 
@@ -48,6 +50,8 @@ function App() {
               <Route path="/GetDataById/:id" element={ <GetDataById /> }  />
               <Route path="/AddData" element={ <AddData /> }  />
               <Route path="/EditData/:id" element={ <EditData /> }  />
+              <Route path="/material-form" element={ <MaterialForm /> }  />
+              <Route path="/signin" element={ <Signin /> }  />
             </Routes>
           </div>
           <div className="navigationDiv">
