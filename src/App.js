@@ -22,6 +22,7 @@ import AddData from './components/crud/AddData';
 import EditData from './components/crud/EditData';
 import MaterialForm from './components/design/Form';
 import Signin from './components/design/Signin';
+import Table from './components/design/TableList';
 
 function App() {
   return ( 
@@ -52,6 +53,7 @@ function App() {
               <Route path="/EditData/:id" element={ <EditData /> }  />
               <Route path="/material-form" element={ <MaterialForm /> }  />
               <Route path="/signin" element={ <Signin /> }  />
+              <Route path="/table" element={ <Table /> }  />
             </Routes>
           </div>
           <div className="navigationDiv">

@@ -1,4 +1,6 @@
 import {useState} from 'react';
+import Alert from '@mui/material/Alert';
+import CheckIcon from '@mui/icons-material/Check';
 
 function AddData(){
 	
@@ -6,6 +8,9 @@ function AddData(){
 		title: '',
 		description: ''
 	});
+
+	const [ alertCode,setAlertcode ] = useState('error');
+	const [ alertMessage,setAlertMessage ] = useState('');
 
 	const handleChange = (e) => {
 		console.log(e.target.name);
@@ -29,10 +34,12 @@ function AddData(){
 				})
 			});
 			if (!responce.status) {
-				console.log('Something went wrong');
+				setAlertcode('error');
+				setAlertMessage('Something went wrong');
 				throw new Error('Responce was not ok');
 			} else {
-				alert('Submitted Successfully');
+				setAlertcode('success');
+				setAlertMessage('Submitted Successfully');
 			}
 		} catch (error) {
 			console.log('Error adding data:', error);
@@ -41,6 +48,14 @@ function AddData(){
 	return(
 		<>
 			<h1>Form</h1>
+
+			{alertMessage ? 
+			<Alert icon={<CheckIcon fontSize="inherit" />} severity={alertCode}>
+		       {alertMessage}
+		    </Alert>
+		    : '' }
+		    
+			
 			<form onSubmit={formSubmit}>
 				Title: <input type="text" name="title" value={formData.title}  onChange={handleChange} /> <br />
 				Description: <input type="text" name="description" value={formData.description} onChange={handleChange} /> <br />

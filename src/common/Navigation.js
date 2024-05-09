@@ -24,6 +24,7 @@ function Navigation(){
 			<li><Link to={{ pathname: "/AddData" }}>AddData</Link></li>
 			<li><Link to={{ pathname: "/material-form" }}>Material Form</Link></li>
 			<li><Link to={{ pathname: "/signin" }}>SignIn</Link></li>
+			<li><Link to={{ pathname: "/table" }}>Table</Link></li>
 		</ul>
 	)
 }
